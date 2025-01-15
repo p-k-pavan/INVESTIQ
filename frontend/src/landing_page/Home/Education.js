@@ -24,7 +24,7 @@ function Education() {
           <img
             src="assets/education.svg"
             alt="Varsity - Stock market education"
-            className="max-w-full lg:max-w-[50%] mx-auto"
+            className="max-w-full lg:max-w-[50%] mx-auto p-4"
           />
         </div>
         <div className="lg:w-1/2 p-6 lg:px-24">
