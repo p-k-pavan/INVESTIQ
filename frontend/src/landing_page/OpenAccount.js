@@ -2,7 +2,7 @@ import React from 'react';
 
 function OpenAccount() {
   return (
-    <div className="container mx-auto px-6 py-12 lg:py-24">
+    <div className="container mx-auto px-6 py-12">
       <div className="text-center">
         {/* Heading */}
         <h1 className="text-2xl lg:text-4xl font-bold mb-4">

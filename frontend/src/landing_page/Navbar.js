@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,9 @@ function Navbar() {
       <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-12 lg:py-6">
         {/* Brand */}
         <div className="flex items-center lg:w-2/3">
-          <a href="#" className="text-2xl font-bold text-black no-underline">
+          <Link to={'#'} className="text-2xl font-bold text-black no-underline">
             INVESTIQ
-          </a>
+          </Link>
         </div>
 
         {/* Toggler for Mobile */}
@@ -46,36 +47,31 @@ function Navbar() {
           } lg:flex flex-col lg:flex-row w-full space-y-2 lg:space-y-0 lg:space-x-6 text-gray-700 text-sm lg:text-base lg:w-full lg:mx-auto lg:w-1/2`}
         >
           <div className={`grid ${isOpen ? "grid-cols-2 gap-2" : ""} lg:flex lg:space-x-6 lg:w-auto lg:gap-8`}>
-            <a
-              href="#"
-              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1"
-            >
+            <Link
+              to={'/sign-up'}
+              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1">
               Signup
-            </a>
-            <a
-              href="#"
-              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1"
-            >
+            </Link>
+            <Link
+              to={'/product'}
+              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1">
               Products
-            </a>
-            <a
-              href="#"
-              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1"
-            >
+            </Link>
+            <Link
+              to={'/about'}
+              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1">
               About
-            </a>
-            <a
-              href="#"
-              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1"
-            >
+            </Link>
+            <Link
+              to={'/support'}
+              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1">
               Support
-            </a>
-            <a
-              href="#"
-              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1"
-            >
+            </Link>
+            <Link
+              to={'/pricing'}
+              className="hover:text-blue-500 transition duration-200 text-decoration-none text-black text-lg block lg:inline-block w-full text-center lg:text-left py-1">
               Pricing
-            </a>
+            </Link>
           </div>
         </div>
       </div>

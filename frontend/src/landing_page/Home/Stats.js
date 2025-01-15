@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const features = [
   {
@@ -36,8 +37,8 @@ const links = [
 
 function Stats() {
   return (
-    <div className="container mx-auto px-12 py-6 lg:px-24">
-      <div className="flex flex-col lg:flex-row">
+    <div className="container mx-auto px-12 pt-6 lg:px-24 py-24">
+      <div className="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap">
         {/* Left Section */}
         <div className="lg:w-1/3 p-3 lg:p-12">
           <h1 className="text-3xl font-bold mb-6">Trust with confidence</h1>
@@ -58,16 +59,16 @@ function Stats() {
           />
           <div className="w-full mt-6 text-center">
             {links.map((link, index) => (
-              <a
+              <Link
                 key={index}
-                href={link.href}
-                className="text-blue-500 mr-10 last:mr-0 font-semibold"
+                to={link.href}
+                className="text-blue-500 mr-10 last:mr-0 font-semibold text-decoration-none"
               >
                 {link.text}{' '}
                 <i
                   className="fa-solid fa-arrow-right text-blue-500"
                 ></i>
-              </a>
+              </Link>
             ))}
           </div>
         </div>

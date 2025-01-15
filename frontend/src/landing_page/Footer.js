@@ -1,9 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className="p-4">
-      <div className="flex sm:flex-wrap lg:flex-nowrap mx-auto justify-between gap-4">
+    <div>
+      <hr />
+      <div className="p-4 bg-gray-50">
+      
+      <div className="flex flex-wrap lg:flex-nowrap lg:flex-row w-fulllg:mx-auto gap-8 lg:gap-0">
         {/* Column 1 - INVESTIQ */}
         <div className="flex flex-col w-full lg:w-1/4">
           <h1 className="text-xl font-bold">INVESTIQ</h1>
@@ -11,12 +15,12 @@ function Footer() {
           <p>All rights reserved.</p>
 
           <div className="flex gap-4 mt-4">
-            <i className="fa-solid fa-x"></i>
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-youtube"></i>
-            <i className="fa-brands fa-linkedin"></i>
-            <i className="fa-brands fa-telegram"></i>
+           <Link to={'/'}> <i className="fa-solid fa-x"></i></Link>
+           <Link to={'/'}> <i className="fa-brands fa-facebook"></i></Link>
+           <Link to={'/'}><i className="fa-brands fa-instagram"></i></Link>
+           <Link to={'/'}><i className="fa-brands fa-youtube"></i></Link>
+           <Link to={'/'}><i className="fa-brands fa-linkedin"></i></Link>
+           <Link to={'/'}><i className="fa-brands fa-telegram"></i></Link>
           </div>
         </div>
 
@@ -82,17 +86,18 @@ function Footer() {
 
       {/* Bottom Links Section */}
       <div className="flex flex-wrap gap-4 mt-8 justify-center">
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">NSE</a>
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">BSE</a>
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">MCX</a>
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Terms & conditions</a>
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Policies & Procedures</a>
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Privacy policy</a>
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Disclosure</a>
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">For Investors</a>
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Attention</a>
-        <a href="#" className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Investor charter</a>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">NSE</Link>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">BSE</Link>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">MCX</Link>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Terms & conditions</Link>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Policies & Procedures</Link>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Privacy policy</Link>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Disclosure</Link>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">For Investors</Link>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Attention</Link>
+        <Link to={'/'} className="text-sm text-gray-500 hover:text-blue-500 text-decoration-none">Investor charter</Link>
       </div>
+    </div>
     </div>
   );
 }
