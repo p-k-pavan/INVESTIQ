@@ -44,7 +44,7 @@ function Navbar() {
         <div
           className={`${
             isOpen ? "flex" : "hidden"
-          } lg:flex flex-col lg:flex-row w-full space-y-2 lg:space-y-0 lg:space-x-6 text-gray-700 text-sm lg:text-base lg:w-full lg:mx-auto lg:w-1/2`}
+          } lg:flex flex-col lg:flex-row w-full space-y-2 lg:space-y-0 lg:space-x-6 text-gray-700 text-sm lg:text-base lg:w-full lg:mx-auto`}
         >
           <div className={`grid ${isOpen ? "grid-cols-2 gap-2" : ""} lg:flex lg:space-x-6 lg:w-auto lg:gap-8`}>
             <Link
