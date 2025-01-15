@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div>
+    <div className='w-full'>
       <hr />
       <div className="p-4 bg-gray-50">
       
-      <div className="flex flex-wrap lg:flex-nowrap lg:flex-row w-fulllg:mx-auto gap-8 lg:gap-0">
+      <div className="flex flex-wrap lg:flex-nowrap lg:flex-row w-full lg:mx-auto gap-8 lg:gap-0 lg:pl-24">
         {/* Column 1 - INVESTIQ */}
         <div className="flex flex-col w-full lg:w-1/4">
           <h1 className="text-xl font-bold">INVESTIQ</h1>
