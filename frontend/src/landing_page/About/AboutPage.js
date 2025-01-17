@@ -48,7 +48,7 @@ const AboutPage = () => {
           <img
             src="/assets/nithinKamath.jpg"
             alt="Nithin Kamath"
-            className="rounded-lg w-[400px] h-[400px] lg:w-[250px] lg:h-[250px] object-cover rounded-full"
+            className="w-[400px] h-[400px] lg:w-[250px] lg:h-[250px] object-cover rounded-full"
           />
           <h3 className="text-xl font-semibold mt-4">Nithin Kamath</h3>
           <p className="text-gray-600">Founder, CEO</p>
